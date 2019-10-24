@@ -29,7 +29,7 @@ public void createMapIntent(View view){
         Intent mapIntent=new Intent(Intent.ACTION_VIEW, uriAddrss);
         mapIntent.setPackage("com.google.android.apps.maps");
         if(mapIntent.resolveActivity(getPackageManager())!=null){
-            startActivity(mapIntent);
+            startActivity(mapIntent);;
         }
 
 }
